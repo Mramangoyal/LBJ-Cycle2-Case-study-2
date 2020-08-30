@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add student</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 2px solid grey;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            box-shadow: 2px;
+            padding-top: 50px;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="center">
+        <h1>Student Enrollment Form:</h1>
+    </div>
+    <div class="center" style="line-height:30px;">
+        <form id="form" method="POST">
+            Student Id: <br>
+            <input type="number" id="id"><br>
+            Student Name: <br>
+            <input type="text" id="name"><br>
+            Gender:<br>
+            <input type="checkbox" id="male"> Male <br>
+            <input type="checkbox" id="female"> Female<br>
+            <input type="date" id="dob"><br>
+            City:<br>
+            <input type="text" id="city"><br>
+            State:<br>
+            <input type="text" id="state"><br>
+            Email Id:<br>
+            <input type="email" id="email"><br>
+            Qualification:<br>
+            <input type="text" id="qualification"><br>
+            Stream:<br>
+            <input type="text" id="stream"><br>
+            <input type="submit" form="form" value="Submit" onclick="add(event)">
+            <input type="button" value="Back" onclick="back()">
+        </form>
+    </div>
+    <script src="add.js"></script>
+</body>
+
+</html>
